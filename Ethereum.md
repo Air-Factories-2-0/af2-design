@@ -8,11 +8,11 @@
 
 ---
 
-## [Air Factories 2.0 - SmartContract](link)
+## [Air Factories 2.0 - SmartContract](https://github.com/Air-Factories-2-0/af2-smart-contract)
 
 ### User Subscription - On boarding
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/1.jpg)
+![](/IMG/ETHEREUM/1.jpg)
 
 ### Voting System
 
