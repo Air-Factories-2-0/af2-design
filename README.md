@@ -48,7 +48,7 @@ Lo SmartContract di Air Factories 2.0 gestisce:
    
    - Affinche questo sia possibile è stato implementato un Oracolo per Ethereum in modo che possa contattare la blockchain creata in Hyperledger Fabric.
 
-## [Print Manager](Printer Manager.md)
+## [Print Manager]("Printer Manager.md")
 
 ![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/4.jpg)
 
