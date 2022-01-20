@@ -1,4 +1,4 @@
-# Air Factories 2.0 - Design
+# [Air Factories 2.0](https://air-factories-2-0.github.io/af2-website/public/) - Design
 
 ## What is Air Factories 2.0
 
