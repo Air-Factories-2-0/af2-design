@@ -2,7 +2,7 @@
 
 ## Printer HUB
 
-## [Printer Controller](link)
+## [Printer Controller](https://github.com/Air-Factories-2-0/af2-printer-controller)
 
 ### IPFS
 
