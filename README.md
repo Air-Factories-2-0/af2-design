@@ -8,7 +8,7 @@ The final aim of the Air Factories 2.0 project is the implementation of an intel
 
 ## Project Introduction
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/1.jpg)
+![](https://github.com/AntonioPipitone/af2-design/blob/main/IMG/README/1.jpg)
 
 ## User
 
@@ -16,7 +16,7 @@ The final aim of the Air Factories 2.0 project is the implementation of an intel
 
 - Air Makers: they can act as validators of the projects in the prototyping phase of the product, as producers of finished pieces and as an Air Caller;
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/2.jpg)
+![](https://github.com/AntonioPipitone/af2-design/blob/main/IMG/README/2.jpg)
 
 ## Front-End
 
@@ -26,7 +26,7 @@ Is a website made using React. It can interact with the Ethereum SmartContract u
 
 The Distributed Back-End è realizzato facendo ricorso a smartcontract di Ethereum e Chaincode per blockchain creata tramite Hyperledger Fabric
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/3.jpg)
+![](https://github.com/AntonioPipitone/af2-design/blob/main/IMG/README/3.jpg)
 
 ### [Hyperledger](Hyperledger.md)
 
@@ -48,9 +48,9 @@ Lo SmartContract di Air Factories 2.0 gestisce:
    
    - Affinche questo sia possibile è stato implementato un Oracolo per Ethereum in modo che possa contattare la blockchain creata in Hyperledger Fabric.
 
-## [Print Manager]("Printer Manager.md")
+## [Print Manager](PrinterManager.md)
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/4.jpg)
+![](/IMG/README/1.jpg)
 
 Il Printer Manager è composto da una parte Software chiamata Printer Controller e una parte Hardware chiamata Printer HUB.
 
@@ -68,7 +68,7 @@ Il server sarà in grado di comunicare con lo SmartContract di Air Factories tra
 
 La Proof of Print è il processo tramite il quale Air Factories 2.0 controlla che un Maker abbia effettivamente stampato un modello richiesto da un Caller e che la qualità di quest'ultimo soddisfi quella richiesta.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/5.jpg)
+![](https://github.com/AntonioPipitone/af2-design/blob/main/IMG/README/5.jpg)
 
 Il processo mette in comunicazioni tutte le componenti del sistema Air Factories 2.0, il Front-End, lo SmartContract sulla Blockchain Ethereum, il ChainCode su blockchain Hyperledger e il Printer Manager e comprende le seguenti fasi:
 
