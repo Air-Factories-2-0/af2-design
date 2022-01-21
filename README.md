@@ -1,4 +1,4 @@
-# Air Factories 2.0 - Design
+# [Air Factories 2.0](https://air-factories-2-0.github.io/af2-website/public/) - Design
 
 ## What is Air Factories 2.0
 
@@ -12,9 +12,15 @@ L’obiettivo di questo progetto è stato quello di implementare metodologie, te
 
 ## Project Introduction
 
+<<<<<<< HEAD
 La piattaforma software realizzata è stata denominata Air Factories 2.0, essa è decentralizzata e basata su tecnologie Blockchain per la gestione del ciclo di vita della fabbrica, dalla prototipazione di nuovi prodotti alla produzione di massa.
 
 ![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/1.jpg)
+=======
+
+![](/IMG/README/1.jpg)
+
+> > > > > > > 7c4de0f7304f9cd647087ba404aec0ce8197279b
 
 La struttura di Air Factories 2.0 comprende
 
@@ -54,11 +60,20 @@ La struttura di Air Factories 2.0 comprende
   
   - Are those who require the production of a certain number of finished pieces by the distributed factory, they can also develop new projects to be produced in the distributed factory and use it for the prototyping of the first pieces;
 
+<<<<<<< HEAD
+
 - ### Air Makers
   
   - they can act as validators of the projects in the prototyping phase of the product, as producers of finished pieces and as an Air Caller;
 
 ## [Front-End](Front-End.md)
+
+=======
+![](/IMG/README/2.jpg)
+
+## [Front-End](https://github.com/Air-Factories-2-0/af2-frontend)
+
+> > > > > > > 7c4de0f7304f9cd647087ba404aec0ce8197279b
 
 Is a website made using React-native web. It can interact with the Ethereum SmartContract using the web3 libraries. 
 
@@ -74,7 +89,7 @@ The Distributed Back-End è realizzato facendo ricorso a Smart Contract di Ether
 
 Il termine Chaincode è paragonabile a Smart Contract in blockchain Hyperledger.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/3.jpg)
+![](/IMG/README/3.jpg)
 
 ### [Hyperledger](Hyperledger.md)
 
@@ -96,9 +111,15 @@ Lo SmartContract di Air Factories 2.0 gestisce:
    
    - Affinche questo sia possibile è stato implementato un Oracolo per Ethereum in modo che possa contattare la blockchain creata in Hyperledger Fabric.
 
-## [Print Manager](Printer Manager.md)
+## [Print Manager](PrinterManager.md)
 
-Il Printer Manager è composto da una parte Software chiamata Printer Controller e una parte Hardware chiamata Printer HUB.
+<<<<<<< HEAD
+=======
+
+![](/IMG/README/1.jpg)
+
+> > > > > > > 7c4de0f7304f9cd647087ba404aec0ce8197279b
+> > > > > > > Il Printer Manager è composto da una parte Software chiamata Printer Controller e una parte Hardware chiamata Printer HUB.
 
 ![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/4.jpg)
 
@@ -118,7 +139,7 @@ Per poter comunicare in remoto con il Firmware della stampante il Controller uti
 
 La Proof of Print è il processo tramite il quale Air Factories 2.0 controlla che un Maker abbia effettivamente stampato un modello richiesto da un Caller e che la qualità di quest'ultimo soddisfi quella richiesta.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/5.jpg)
+![](/IMG/README/5.jpg)
 
 Il processo mette in comunicazioni tutte le componenti del sistema Air Factories 2.0: il Front-End, lo SmartContract sulla Blockchain Ethereum, il Chaincode su Blockchain Hyperledger e il Printer Manage.
 
