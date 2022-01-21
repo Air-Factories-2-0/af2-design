@@ -14,9 +14,7 @@
 
 ![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/1.jpg)
 
-### Voting System
-
-#### Proposing Model
+### Voting System - Proposing new Model
 
 ### Scheduling
 
