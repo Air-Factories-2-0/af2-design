@@ -14,7 +14,7 @@ L’obiettivo di questo progetto è stato quello di implementare metodologie, te
 
 La piattaforma software realizzata è stata denominata Air Factories 2.0, essa è decentralizzata e basata su tecnologie Blockchain per la gestione del ciclo di vita della fabbrica, dalla prototipazione di nuovi prodotti alla produzione di massa.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/1.jpg)
+![](/IMG/README/1.jpg)
 =======
 
 La struttura di Air Factories 2.0 comprende
@@ -49,7 +49,7 @@ La struttura di Air Factories 2.0 comprende
 
 ## User
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/2.jpg)
+![](/IMG/README/2.jpg)
 
 - ### Air Caller
   
@@ -77,7 +77,7 @@ The Distributed Back-End è realizzato facendo ricorso a Smart Contract di Ether
 
 Il termine Chaincode è paragonabile a Smart Contract in blockchain Hyperledger.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/3.jpg)
+![](/IMG/README/3.jpg)
 
 ### [Hyperledger](Hyperledger.md)
 
@@ -103,7 +103,7 @@ Lo SmartContract di Air Factories 2.0 gestisce:
 
 Il Printer Manager è composto da una parte Software chiamata Printer Controller e una parte Hardware chiamata Printer HUB.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/4.jpg)
+![](/IMG/README/4.jpg)
 
 ### Printer HUB
 
@@ -121,7 +121,7 @@ Per poter comunicare in remoto con il Firmware della stampante il Controller uti
 
 La Proof of Print è il processo tramite il quale Air Factories 2.0 controlla che un Maker abbia effettivamente stampato un modello richiesto da un Caller e che la qualità di quest'ultimo soddisfi quella richiesta.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/README/5.jpg)
+![](/IMG/README/5.jpg)
 
 Il processo mette in comunicazioni tutte le componenti del sistema Air Factories 2.0: il Front-End, lo SmartContract sulla Blockchain Ethereum, il Chaincode su Blockchain Hyperledger e il Printer Manage.
 
