@@ -59,8 +59,6 @@ La struttura di Air Factories 2.0 comprende
   
   - they can act as validators of the projects in the prototyping phase of the product, as producers of finished pieces and as an Air Caller;
 
-
-
 ## [Front-End](https://github.com/Air-Factories-2-0/af2-frontend)
 
 Is a website made using React-native web. It can interact with the Ethereum SmartContract using the web3 libraries. 
