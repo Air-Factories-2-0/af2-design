@@ -125,7 +125,7 @@ The process connects all the components of the Air Factories 2.0 system: the Fro
 
 The *Proof of Print* includes the following steps:
 
-#### Fase 0 - Ordine
+#### Fase 0 - Order
 
 In order for the Proof of Print to begin we have a phase 0 in which a caller places an order by specifying the number of pieces and the quality of the print (which will decide the slicing profile to use).
 After the scheduling phase, the Makers who will print the requested design will be selected, and the notification to start printing will then arrive in the front-end of these.
@@ -133,12 +133,12 @@ Makers not currently available for printing will be discarded from the schedulin
 
 The Caller will make a preliminary payment by transferring the tokens required for printing to the Air Factories 2.0 SmartContract address.
 
-#### Fase 1 - Inizio Stampa
+#### Fase 1 - Start Printing
 
 Once the notification has appeared on the front-end of the Maker, it will be able to start the automatic printing phase.
-#### Fase 2 - Recupero STL e Profilo Slicing,  Inizio Stampa
+#### Fase 2 - Retrive STL and Slicing Profile, Start Printing
 
-##### 2.1 - Recupero HASHES: STL and Slicing Profile
+##### 2.1 - Retrive HASHES: STL and Slicing Profile
 
 First of all, starting from the requested order, the HASH of the STL and the HASH of the slicing profile for the printer that is used are retrieved.
 
@@ -152,11 +152,11 @@ It is not shown in the diagram, but basically the GCODE is created starting from
 
 The print start timestamp of the design is saved on the Air Factories 2.0 smartcontract.
 
-#### Fase 3 - Raccolta Data
+#### Fase 3 - Data Collection
 
 Together with phase 4, phase 3 is repeated until the printer has finished making the piece.
 
-##### 3.1 - Inizio Stampa
+##### 3.1 - Start Printing
 
 The Controller through octorest communicates with OctoPrint which, by contacting the printer FW, starts the printing process and starts the timelapse service.
 
@@ -164,38 +164,38 @@ The Controller through octorest communicates with OctoPrint which, by contacting
 
 Photos of the printing process are made every N Layer printed. These are saved on the controller.
 
-##### 3.3 - Salvataggio delle foto su IPFS
+##### 3.3 - Upload snapshot on IPFS
 
 Each photo taken during the printing process is saved on IPFS and the HASH of the latter is saved on the controller.
 
-##### 3.4 - Invio Hash della foto ad Hyperledger
+##### 3.4 - Sending snapshots' hashes to Hyperledger
 
 The hash of the photo just saved on IPFS is sent (together with the GCODE HASH) to Hyperledger via a REST call.
 
-##### Attenzione
+##### Warning
 
 If during the printing phase the process should be interrupted due to any error, the end of printing timestamp will be sent to the Ethereum blockchain considering the printing failed.
 
-#### Fase 4 - Verifica e Validazione Stampa
+#### Fase 4 - Printing status check and validation
 
-##### 4.1 - Recupero Foto e GCODE
+##### 4.1 - Retrive snapshot and GCODE
 
 Through the received HASH, the GCODE created by the controller and the photo to the N layer of the design printing process are downloaded.
-##### 4.2 - Verifica qualità Stampa
+##### 4.2 - Printing quality validation
 
 Through the algorithm explained in more detail in the section of [Hyperledger] (Hyperledger.md) it is verified that the printing process at the N layer is satisfying the required quality standards. The result of the verification at the aforementioned layer is saved on the Hyperledger blockchain.
 
-#### Fase 5 - Fine Stampa
+#### Fase 5 - End Printing
 
-##### 5.1 - Fine stampa del singolo pezzo
+##### 5.1 - End printing: Single piece
 
 The printer FW will set its status to "Operational" to indicate that the printing is finished (In case of error / interruption of the printing the status would be "Canceling").
 
-##### 5.2 - Invio timestamp fine Stampa
+##### 5.2 - Send end printing timestamp
 
 The controller via OctoPrint will verify that the printing has finished and will send the timepstamp to the Air Factories 2.0 Smart Contract to indicate that the printing procedure has been successful and has not been interrupted.
 
-##### Attenzione
+##### Warning
 
 Before proceeding with phase 5.3 that is the Reward Claim, the previous phases must be completed for EVERY piece of the requested design.
 
@@ -204,15 +204,15 @@ Before proceeding with phase 5.3 that is the Reward Claim, the previous phases m
 Once all the pieces ordered by the Caller have finished printing, the user can request to receive the tokens required for printing.
 
 A call will therefore be made to the Smart Contract method to request payment.
-##### 5.4 - Oracolo Ethereum: Recupero risultato di validazione
+##### 5.4 - Ethereum Oracle: Retrive validation result
 
 In order to retrieve the information contained on the Hyperledger Blockchain, Ethereum must necessarily go through an Oracle. The Oracle will make a GET call on the REST Server connected to Hyperledger which will retrieve the data necessary for Ethereum to decide whether to pay the Maker or not.
 
-##### 5.5 - Recupero risultato validazione da Hyperledger
+##### 5.5 - Retrive validation result from Hyperledger
 
 For each printed piece, on the Hyperledger blockchain there are the results of the print quality check carried out on each layer, therefore a percentage of print quality is associated with each piece: if all the pieces have a value greater than 70/80% (TO BE DECIDED) then the order is considered completed successfully.
 
-##### 5.6 - Pagamento Maker
+##### 5.6 - Paying Maker
 
 Once the printing result has been retrieved from Hyperledger, the Smart Contract will decide whether to pay the Maker who made the printing or reimburse the Caller.
 
