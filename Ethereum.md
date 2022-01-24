@@ -187,6 +187,7 @@ As is wanted an high efficiency an higher score is given to a not busy **Printer
 In relation to the previously created priority list, in the last phase there will be the pieces distribution, considering:
 
 - N 
+  
   - The number of selected **Makers** 
 
 - M
@@ -216,7 +217,7 @@ def piecesDistribution(printers, npieces, maxPrintablePieces):
   if npieces==1:
    firstPrinter = max(printers, key=printers.get)
    return { firstPrinter : 1 }
-   
+
     #If the number of pieces is less then the printers in the list then we use
     #norm min-max in order to remove the printers with less priority
     if npieces < len(printers):
