@@ -152,11 +152,19 @@ In particular, thanks to these filter is possible to check:
 
 ##### Phase 2 - Prioritizing Makers
 
+
 ![](/IMG/ETHEREUM/7.jpg)
 
 ##### Pieces Distribution
 
 ![](/ETHEREUM/8.jpg)
+=======
+
+![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/7.jpg)
+
+##### Pieces Distribution
+
+![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/8.jpg)
 
 ##### Scheduling Algorithm
 
