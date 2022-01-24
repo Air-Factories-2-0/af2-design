@@ -10,13 +10,13 @@
 
 This section contain the description of the main functionality of the Air Factories 2.0 Smart Contract.
 
-<img title="" src="file:///Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/1.jpg" alt="" data-align="center">
+<img title="" src="/IMG/ETHEREUM/1.jpg" alt="" data-align="center">
 
 ---
 
 ### User Registration & On-boarding
 
-<img src="file:///Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/2.jpg" title="" alt="" data-align="left">
+<img src="/IMG/ETHEREUM/2.jpg" title="" alt="" data-align="left">
 
 #### Registration
 
@@ -60,13 +60,13 @@ In order to propose a new desing the process  go through 3 different steps:
 
 - Voting System - Phase 2
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/3.jpg)
+![](/IMG/ETHEREUM/3.jpg)
 
 #### Proposal
 
 In this step, a user insert into the platform an STL of the desing he would like to propose to the community.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/4.jpg)
+![](/IMG/ETHEREUM/4.jpg)
 
 ##### 1 - Insert the STL in the Proposal Page
 
@@ -128,7 +128,7 @@ In this section is showed the policy followed by the Scheduling Algorithm implem
 
 Before going into the actual phase of the algorithm lets take a look at the data that are used to select the Makers that will print the design order, showed in the following figure: 
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/5.jpg)
+![](/IMG/ETHEREUM/5.jpg)
 
 In the same image are specified the Filters hierarchy that are used in the phase 1.
 
@@ -150,13 +150,13 @@ In particular, thanks to these filter is possible to check:
   
   - After 5 increments no more **Printers** are selected.
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/6.jpg)
+![](/IMG/ETHEREUM/6.jpg)
 
 ##### Phase 2 - Prioritizing Makers
 
 
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/7.jpg)
+![](/IMG/ETHEREUM/7.jpg)
 
 
 
@@ -164,7 +164,7 @@ In particular, thanks to these filter is possible to check:
 
 
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/8.jpg)
+![](/ETHEREUM/8.jpg)
 
 
 
