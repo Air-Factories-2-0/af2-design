@@ -118,8 +118,6 @@ In order to vote the design, the **Maker** *have to print at least one time the 
 
 #### Voting System - Algorithm
 
-
-
 ---
 
 ### Scheduling
@@ -154,32 +152,18 @@ In particular, thanks to these filter is possible to check:
 
 ##### Phase 2 - Prioritizing Makers
 
-
-
 ![](/IMG/ETHEREUM/7.jpg)
-
-
 
 ##### Pieces Distribution
 
-
-
 ![](/ETHEREUM/8.jpg)
-
-
 
 ##### Scheduling Algorithm
 
-
-
 ---
-
-
 
 ### Token
 
 ---
-
-
 
 ### Oracle
