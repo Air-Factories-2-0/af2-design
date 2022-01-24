@@ -156,7 +156,7 @@ In this phase the algorithm will create a priority list of the **Printers** sele
 
 The algorithm will give a vote on each **Printers** based on the following assumptions: 
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/7.jpg)
+![](/IMG/ETHEREUM/7.jpg)
 
 Makers' reputation is important on the creation of the priority list because in this way there is an higher probability that the choosen **Makers** will be more reliable.
 
@@ -198,7 +198,7 @@ In relation to the previously created priority list, in the last phase there wil
   
   - The maximum number of pieces that each **Maker** can print in a given time 
 
-<img src="file:///Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/8.jpg" title="" alt="" data-align="inline">
+<img src="/IMG/ETHEREUM/8.jpg" title="" alt="" data-align="inline">
 
 ##### Scheduling Algorithm
 
