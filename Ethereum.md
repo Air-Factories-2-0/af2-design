@@ -152,21 +152,102 @@ In particular, thanks to these filter is possible to check:
 
 ##### Phase 2 - Prioritizing Makers
 
+In this phase the algorithm will create a priority list of the **Printers** selected in the previously phase.
 
-![](/IMG/ETHEREUM/7.jpg)
-
-##### Pieces Distribution
-
-![](/ETHEREUM/8.jpg)
-=======
+The algorithm will give a vote on each **Printers** based on the following assumptions: 
 
 ![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/7.jpg)
 
+Makers' reputation is important on the creation of the priority list because in this way there is an higher probability that the choosen **Makers** will be more reliable.
+
+As is wanted an high efficiency an higher score is given to a not busy **Printer**; the same concept is applied regard the ecosustainability: **Printer** closer to the user that made the order will have a value between 0 and 2 given by the following formula: 
+
+> Let's consider a Map containing the Maker as a key and the distance from the Caller as a value:
+> 
+> Using the following formula, a value between 0 and 1 is assigned to each distance
+> 
+> > **X' = ( x - min(X) ) / ( max(X) - min(X) )**
+> 
+> *0 will be associated with the furthest maker*
+> 
+> Now let's make our values inversely proportional to distance:
+> 
+> > **X'' = 1 - x'**
+> 
+> All makers will now have an associated value between 0 and 1 where:
+> 
+> **1 = Very close to the Caller**
+> 
+> **0 = Far away from the Caller**
+> 
+> This value will be multiplied by 2 in order to have greater impact on the priority
+
 ##### Pieces Distribution
 
-![](/Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/8.jpg)
+In relation to the previously created priority list, in the last phase there will be the pieces distribution, considering:
+
+- N 
+  - The number of selected **Makers** 
+
+- M
+  
+  - The number of pieces requested on the order 
+
+- X
+  
+  - The maximum number of pieces that each **Maker** can print in a given time 
+
+<img src="file:///Users/antoniopipitone/Desktop/Air%20Factories%202.0/af2-design/IMG/ETHEREUM/8.jpg" title="" alt="" data-align="inline">
 
 ##### Scheduling Algorithm
+
+```python
+def piecesDistribution(printers, npieces, maxPrintablePieces):
+    '''
+        @input printers = dict -> { printer : priority }
+        @input npieces = int -> number of pieces to be printed
+        @input maxPrintablePieces = int -> max number of pieces that can be printed by
+                                           each printer in a given time
+        @return distribution = dict -> { maker : pieces to  }
+    '''
+    distribution = {}
+    #If there is only 1 piece to be printed then we assing it to the first 
+    #printer in the list
+  if npieces==1:
+   firstPrinter = max(printers, key=printers.get)
+   return { firstPrinter : 1 }
+   
+    #If the number of pieces is less then the printers in the list then we use
+    #norm min-max in order to remove the printers with less priority
+    if npieces < len(printers):
+        minValue = min(list(printers.values()))
+        for key, value in printers.items():
+            printers[key] = (value - minValue ) / (10 - minValue)
+
+    #Simple direct distribution
+    sumPriority = sum(list(printers.values()))
+    np = len(printers) #number of printers
+    remainingPieces = npieces 
+    for key, value in printers.items():
+        assingPieces = round((npieces * value) / sumPriority)
+  #If assingPieces > maxPrintablePieces then assingPieces = maxPrintablePieces
+        if assingPieces > maxPrintablePieces:
+           assingPieces = maxPrintablePieces
+  #if remainingPieces = 0 or assingPieces > remainingPieces then assing to the printer
+  #only the remainingPieces
+        if remainingPieces <= 0 or assingPieces > remainingPieces:
+            distribution[key] = remainingPieces
+            break
+        distribution[key] = assingPieces
+        remainingPieces -= assingPieces
+
+    #If after this process there are still remainingPieces these will be assing to the 
+    #first printer in the priority list
+    if remainingPieces > 0:
+        firstPrinter = max(printers, key=printers.get)
+        distribution[firstPrinter] += remainingPieces
+    return distribution
+```
 
 ---
 

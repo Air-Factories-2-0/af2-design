@@ -129,7 +129,7 @@ La *Proof of Print* comprende le seguenti fasi:
 
 Per far sì che possa iniziare la Proof of Print abbiamo una fase 0 nella quale un caller effettua un ordine specificando il numero di pezzi e la qualità della stampa (che deciderà il profilo di slicing da utilizzare).
 Dopo la fase di scheduling verranno selezionati i Maker che andranno ad effettaure le stampe del desing richiesto, nel front-end di questi arriverà quindi la notifica per iniziare a stampare. 
-I maker attualmente occupati o non disponibili alla stampa saranno scartati dalla fase di scheduling. 
+I maker attualmente non disponibili alla stampa saranno scartati dalla fase di scheduling. 
 
 Il Caller effettuerà un pagamento preventivo trasferendo i token necessari per la stampa all'indirizzo dello SmartContract di Air Factories 2.0 .
 
