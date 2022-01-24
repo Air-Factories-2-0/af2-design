@@ -125,7 +125,7 @@ The process connects all the components of the Air Factories 2.0 system: the Fro
 
 The *Proof of Print* includes the following steps:
 
-#### Fase 0 - Order
+#### Phase 0 - Order
 
 In order for the Proof of Print to begin we have a phase 0 in which a caller places an order by specifying the number of pieces and the quality of the print (which will decide the slicing profile to use).
 After the scheduling phase, the Makers who will print the requested design will be selected, and the notification to start printing will then arrive in the front-end of these.
@@ -133,10 +133,10 @@ Makers not currently available for printing will be discarded from the schedulin
 
 The Caller will make a preliminary payment by transferring the tokens required for printing to the Air Factories 2.0 SmartContract address.
 
-#### Fase 1 - Start Printing
+#### Phase 1 - Start Printing
 
 Once the notification has appeared on the front-end of the Maker, it will be able to start the automatic printing phase.
-#### Fase 2 - Retrive STL and Slicing Profile, Start Printing
+#### Phase 2 - Retrive STL and Slicing Profile, Start Printing
 
 ##### 2.1 - Retrive HASHES: STL and Slicing Profile
 
@@ -176,7 +176,7 @@ The hash of the photo just saved on IPFS is sent (together with the GCODE HASH) 
 
 If during the printing phase the process should be interrupted due to any error, the end of printing timestamp will be sent to the Ethereum blockchain considering the printing failed.
 
-#### Fase 4 - Printing status check and validation
+#### Phase 4 - Printing status check and validation
 
 ##### 4.1 - Retrive snapshot and GCODE
 
@@ -185,7 +185,7 @@ Through the received HASH, the GCODE created by the controller and the photo to 
 
 Through the algorithm explained in more detail in the section of [Hyperledger] (Hyperledger.md) it is verified that the printing process at the N layer is satisfying the required quality standards. The result of the verification at the aforementioned layer is saved on the Hyperledger blockchain.
 
-#### Fase 5 - End Printing
+#### Phase 5 - End Printing
 
 ##### 5.1 - End printing: Single piece
 
