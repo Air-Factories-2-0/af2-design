@@ -1,4 +1,4 @@
-# Printer Manage
+# Printer Manager
 
 This document contains the description of the Printer Manager.
 
