@@ -8,7 +8,7 @@ The final aim of the Air Factories 2.0 project is the implementation of an intel
 
 ## Project Goals
 
-The objective of this project was to implement methodologies, techniques, algorithms, hardware and software systems to build a decentralized factory composed of 3D printers, freely made available by users distributed throughout the territory, and to finalize working prototypes relating to the software platform and hardware components.
+The aim of this project was to implement methodologies, techniques, algorithms, hardware and software systems to build a decentralized factory composed of 3D printers, freely made available by users distributed throughout the territory, and to finalize working prototypes relating to the software platform and hardware components.
 
 ## Project Introduction
 
@@ -61,7 +61,7 @@ The structure of Air Factories 2.0 includes:
 
 ## [Front-End](https://github.com/Air-Factories-2-0/af2-frontend)
 
-Is a website made using React-native web. It can interact with the Ethereum SmartContract using the web3 libraries. 
+It's a website made using React-Native Web; it can interact with the Ethereum SmartContract using the web3 libraries. 
 
 ## Distributed Back-End
 
@@ -117,7 +117,7 @@ In order to communicate remotely with the printer Firmware, the Controller uses 
 
 ### Proof of Print (PoP)
 
-Proof of Print is the process by which Air Factories 2.0 checks that a Maker has actually printed a model requested by a Caller and that the quality of the latter meets that request.
+Proof of Print is the process by which Air Factories 2.0 checks that a Maker has actually printed a model requested by a Caller and the quality of the latter meets that request.
 
 ![](/IMG/README/5.jpg)
 
