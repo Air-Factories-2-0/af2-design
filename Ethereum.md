@@ -2,13 +2,13 @@
 
 ## [What is a Smart Contract?](https://ethereum.org/en/developers/docs/smart-contracts/)
 
-> A "smart contract" is simply a program that runs on the Ethereum blockchain. It's a collection of code (its functions) and data (its state) that resides at a specific address on the Ethereum blockchain.
+> A "Smart Contract" is simply a program that runs on the Ethereum Blockchain. It's a collection of code (its functions) and data (its state) that resides at a specific address on the Ethereum blockchain.
 
 ---
 
 ## [Air Factories 2.0 - Smart Contract](https://github.com/Air-Factories-2-0/af2-smart-contract)
 
-This section contain the description of the main functionality of the Air Factories 2.0 Smart Contract.
+This section contains the description of the main functionalities of the Air Factories 2.0 Smart Contract.
 
 <img title="" src="/IMG/ETHEREUM/1.jpg" alt="" data-align="center">
 
@@ -20,15 +20,15 @@ This section contain the description of the main functionality of the Air Factor
 
 #### Registration
 
-In order to register on Air Factories 2.0, the user simply have to visit the website and register himself into it. To do this, the user must use Metamask and has to be connected with his Ethereum Account.
+In order to register on Air Factories 2.0, the user simply have to visit the website and register himself into it; to do this, the user must use MetaMask and has to be connected with his Ethereum Account.
 
 [SCREENSHOT HOMEPAGE ESEMPIO COLLEGAMENTO CON METAMASK]()
 
-In the registration page, the user will specify the type of the account he would like to create between **Air Maker** and **Air Caller**. These data, together with the account address and other information, will be saved in the blockchain.
+In the registration page, the user will specify the type of the account he would like to create between **Air Maker** and **Air Caller**; these data, together with the account address and other information, will be saved in the Blockchain.
 
 [SCREENSHOT REGISTRATION PAGE]()
 
-Every time the user starts a transaction that will write data in the Ethereum blockchain, he must pay the GAS that is the execution cost in the network; in this case, for instance, the user will pay the registration in Air Factories 2.0 with Ethereum. 
+Every time the user starts a transaction that will write data in the Ethereum Blockchain, he must pay the GAS that is the execution cost in the network; in this case, for instance, the user will pay the registration in Air Factories 2.0 with Ethereum. 
 
 The user to login into the website just needs to go in the homepage while he is connected in MetaMask with the address he used for the registration. The system will automaticaly detect if the account address exists on the smart contract and will show him the main page. 
 
@@ -42,7 +42,7 @@ If the type of the account is **Air Maker** the use will be able to add new prin
 
 The user have to go into the specific page and inserts the information about his printer like: type, brand, available nozzles, available materials, food safety and so on.
 
-Just like the registration procedure, even in this case these data will be saved in the blockchain and associated with the user address; so the user must pay the GAS. 
+Just like the registration procedure, even in this case, data will be saved in the Blockchain and associated with the user address; so the user must pay the GAS. 
 
 ---
 
@@ -52,7 +52,7 @@ In this section is described how a new desing is added into the Air Factories 2.
 
 In the ordering phase, if the desing is accepted, the users could request the **Air Makers** to print a certain number of this desing.  
 
-In order to propose a new desing the process  go through 3 different steps:
+In order to propose a new desing the process goes through 3 different steps:
 
 - Proposal
 
@@ -64,57 +64,55 @@ In order to propose a new desing the process  go through 3 different steps:
 
 #### Proposal
 
-In this step, a user insert into the platform an STL of the desing he would like to propose to the community.
+In this step, a user insert into the platform an STL of the desing he would like to propose to the Air Factories 2.0 community.
 
 ![](/IMG/ETHEREUM/4.jpg)
 
 ##### 1 - Insert the STL in the Proposal Page
 
-The **Air Caller** (or **Air Maker**) go into the Proposal Page where he can upload the STL file of the design and specify other informations about it (e.g., a description of the model and what it should be used for).
+First of all, the **Air Caller** (or **Air Maker**) goes into the Proposal Page where he can upload the STL file of the design and specify other informations about it (e.g., a description of the model and what it should be used for).
 
 ##### 2 & 3 - Load STL into IPFS
 
-At this point the front-end will upload the STL file into IPFS and will retrive his HASH.
+At this point, the front-end will upload the STL file into IPFS and will retrive its HASH.
 
 ##### 4 - Send HASH and STL Info
 
-The front-end will sent the HASH and the informations mentioned above to the blockchain in which these will be stored.
+Then, the front-end will sent the HASH and the informations, mentioned above, to the Blockchain in which these will be stored.
 
-Now every user that want to see the design could simply get the hash in order to download it.
+Now, every user that want to see the design could simply get the hash in order to download it.
 
 ### Voting System
 
 In the following step the **Air Makers** are the only ones that can vote.
 
-The voting system is based on the reputation of the **Makers**.
+The voting system is based on the **Makers**' reputation.
 
 #### Voting System - Phase 1
 
-In the first phase of the voting system the **Air Makers** will express their opinion about  ethical and utilities criteria, for instance:
+In the first voting phase, the **Air Makers** will express their opinion about ethical and utilities criteria, for instance:
 
 - **Ethical Criteria:** 
   
-  - Makers will vote the STL design considering its ethical aspects.
+  - Air Makers will vote the STL design considering its ethical aspects.
 
 - **Utilities Criteria:** 
   
-  - Maker will vote the STL design considering its utility
-  
-  - Design like calibration cube are more less likely to be accepted because no one is interred on buying a batch of this kind of object.
+  - Air Makers will vote the STL design considering its utility. Some designs, such as the calibration cube, are less likely to be accepted because no one is interested in      purchasing a batch of this type of item.
 
 #### Voting System - Phase 2
 
-In the second phase the **Air Makers** will test the STL technical criteria.
+In the second voting phase, the **Air Makers** will test the STL technical criteria.
 
-In order to vote the design, the **Maker** *have to print at least one time the STL that he want to vote*
+In order to vote the design, the **Air Maker** *have to print at least one time the STL that he want to vote*
 
 - **Feasibility Criteria:** 
   
-  - Maker will vote if the STL design can be printed without any problems.
+  - Air Maker will vote if the STL design can be printed without any obvious feasibility problems.
 
 - **Quality Criteria:**
   
-  - Maker will vote if the STL design once printed actually has the features that the Maker expected from that specific design.
+  - Air Maker will vote if the STL design, once printed, actually has the features that the Air Maker expected from that specific design.
 
 #### Voting System - Algorithm
 
@@ -124,63 +122,63 @@ In order to vote the design, the **Maker** *have to print at least one time the 
 
 In this section is showed the policy followed by the Scheduling Algorithm implemented in Air Factories 2.0. 
 
-Before going into the actual phase of the algorithm lets take a look at the data that are used to select the Makers that will print the design order, showed in the following figure: 
+Before going into the actual phase of the algorithm lets take a look at the data that are used to select the Air Makers that will print the design order, as shown in the following figure: 
 
 ![](/IMG/ETHEREUM/5.jpg)
 
-In the same image are specified the Filters hierarchy that are used in the phase 1.
+In the same image are specified the Filters hierarchy that are used in the first scheduling phase.
 
 ##### Phase 1 - Filtering Makers
 
-The first filters that are used simply check if a criteria is accomplished or not, if one of them is not satisfied then the **Air Maker's Printer** is rejected by the algorithm.
+The first filters that are used simply check if a criteria is accomplished or not: if one of them is not satisfied then the **Air Maker's Printer** is rejected by the algorithm.
 
-Then subsequent filter will select the **Printer** according to the available nozzles and the distance from the **Air Caller** that made the order. 
+Then subsequent filter will select the **Air Printer** according to the available nozzles and the distance from the **Air Caller** that made the order. 
 
-In particular, thanks to these filter is possible to check:
+In particular, thanks to these filter, it's possible to check:
 
-- If the quality related to the nozzle diameter satisfy the requested once from the **Caller**
+- If the quality related to the nozzle diameter satisfy the requested one from the **Air Caller**:
   
-  - If the **Caller** accept to have an higher quality and consequent higher price then are selected **Printers** that have smaller diamater nozzles as well.
+  - If the **Air Caller** accepts to have an higher quality, and a consequent higher cost, then are selected **Air Printers** that have smaller diamater nozzles as well.
 
-- If there are **Printers** nearby the **Caller** that made the order
+- If there are **Air Printers** nearby the **Air Caller** that made the order:
   
-  - If not, then the range of the geographic location is increased until it reaches a limit. 
+  - If not, then the range of the **Air Printer**' geographic location is increased until it reaches a limit. 
   
-  - After 5 increments no more **Printers** are selected.
+  - After 5 increments no more **Air Printers** are selected.
 
 ![](/IMG/ETHEREUM/6.jpg)
 
 ##### Phase 2 - Prioritizing Makers
 
-In this phase the algorithm will create a priority list of the **Printers** selected in the previously phase.
+In this phase the algorithm will create a priority list of the **Air Printers** selected in the previously phase.
 
-The algorithm will give a vote on each **Printers** based on the following assumptions: 
+The algorithm will give a vote on each **Air Printer** based on the following assumptions: 
 
 ![](/IMG/ETHEREUM/7.jpg)
 
-Makers' reputation is important on the creation of the priority list because in this way there is an higher probability that the choosen **Makers** will be more reliable.
+**Air Makers**' reputation is important on the creation of the priority list because, in this way, there is an higher probability that the choosen **Air Makers** will be more reliable.
 
-As is wanted an high efficiency an higher score is given to a not busy **Printer**; the same concept is applied regard the ecosustainability: **Printer** closer to the user that made the order will have a value between 0 and 2 given by the following formula: 
+As is wanted an high efficiency an higher score is given to a not busy **Air Printer**; the same concept is applied regard the ecosustainability: **Air Printer** closer to the user that made the order will have a score value between 0 and 2 given by the following formula.
 
-> Let's consider a Map containing the Maker as a key and the distance from the Caller as a value:
+> Let's consider a Map containing the Air Maker as a key and the distance from the Air Caller as a value.
 > 
-> Using the following formula, a value between 0 and 1 is assigned to each distance
+> Using the following formula, a value between 0 and 1 is assigned to each distance:
 > 
 > > **X' = ( x - min(X) ) / ( max(X) - min(X) )**
 > 
 > *0 will be associated with the furthest maker*
 > 
-> Now let's make our values inversely proportional to distance:
+> Now the values are considered inversely proportional to the distance:
 > 
 > > **X'' = 1 - x'**
 > 
 > All makers will now have an associated value between 0 and 1 where:
 > 
-> **1 = Very close to the Caller**
+> **1 = Very close to the Air Caller**
 > 
-> **0 = Far away from the Caller**
+> **0 = Far away from the Air Caller**
 > 
-> This value will be multiplied by 2 in order to have greater impact on the priority
+> This value will be multiplied by 2 in order to have a greater impact on the priority.
 
 ##### Pieces Distribution
 
@@ -188,15 +186,15 @@ In relation to the previously created priority list, in the last phase there wil
 
 - N 
   
-  - The number of selected **Makers** 
+  - The number of selected **Air Makers** 
 
 - M
   
-  - The number of pieces requested on the order 
+  - The number of pieces requested with the order 
 
 - X
   
-  - The maximum number of pieces that each **Maker** can print in a given time 
+  - The maximum number of pieces that each **Air Maker** can print in a given time 
 
 <img src="/IMG/ETHEREUM/8.jpg" title="" alt="" data-align="inline">
 
