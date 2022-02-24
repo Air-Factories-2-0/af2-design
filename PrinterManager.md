@@ -4,27 +4,25 @@ This document contains the description of the Printer Manager.
 
 ## Printer HUB
 
-The printer HUB is composed of a Raspberry PI 3 Model A+ in which are connected 2 camera, the first one is a Raspi Camera v2 and the other is a webcam.
+The printer HUB consists of a Raspberry PI 3 Model A + to which a Raspi Camera v2 is connected; the Raspberry, in turn, is connected to the 3D printer via USB to communicate with it.
 
-The Raspberry is connected to the 3d Printer via USB in order to comunicate with it.
-
-This setup allow to use OctoPrint to send command to the 3d Printer Firmware, enable the printing process and the camera recording. 
+This setup allows the use of OctoPrint to send commands to the 3D printer firmware, enable the printing process and the acquisition of images from the camera.
 
 ## [Printer Controller](https://github.com/Air-Factories-2-0/af2-printer-controller)
 
-The Printer Controller allow the user to interact with the printer during the PoP.
+The Printer Controller allows the user to interact with the printer during the PoP.
 
-It expose a Server that will be contacted every time an order is sent to the **Maker**, in order to start the data collection, and printing validation process; to achieve this goal the controller must be able to interact with IPFS, Octoprint, Ethereum and Hyperledger.
+It exposes a Server that will be contacted every time an order is sent to the **Maker**, in order to start the data collection, and printing validation process; to achieve this goal the controller must be able to interact with IPFS, OctoPrint, Ethereum and Hyperledger.
 
 ### [IPFS](https://ipfs.io/)
 
 > A peer-to-peer hypermedia protocol designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open.
 
-IPFS is the InterPlanetary File System in which the files are stored based on their  HASHES.
+IPFS is the InterPlanetary File System in which the files are stored based on their HASHES.
 
 ### [OctoPrint](https://octoprint.org/)
 
-> **OctoPrint** is an open source 3D printer controller application, which provides a web interface for the connected printers. It displays printers' status and key parameters and allows user to schedule prints and remotely control the printer
+> **OctoPrint** is an open source 3D printer controller application, which provides a Web interface for the connected printers. It displays printers' status and key parameters and allows user to schedule prints and remotely control the printer.
 
 ### Flask Server
 
@@ -73,7 +71,7 @@ def start():
 
 #### Web3
 
-Web3 allow the communication with a Ethereum node in order to contact the methods defined in a certain Smart Contract.
+Web3 allows the communication with an Ethereum node in order to contact the methods defined in a certain Smart Contract.
 
 To be able to call a method it is necessary to have the ABI of the Smart Contract.
 
@@ -97,9 +95,7 @@ contract.functions.printingBegin(self.__printer,tstmp,design_bytes32).transact()
 
 #### OctoRest
 
-OctoRest is a python library that allow the comunication with OctoPrint via REST request.
-
-It contains method that contact a specific API in order to perfom a specific action.
+OctoRest is a Python library that allows the comunication with OctoPrint via REST request; it contains methods that contact a specific API in order to perfom a specific action.
 
 For instance, after the authentication to start a printing process it is possible to use the following method:
 
@@ -117,11 +113,11 @@ client.connect(autoconnect = True)
 client.select("GCODE/PATH/IN/OCTOPRINT",print=True)
 ```
 
-#### requests library
+#### Requests library
 
-The request library simply allow to perform HTTP request that will be used in order to communicate with the Server connected to Hyperledger Fabric Blockchain
+The Requests library simply allows to perform HTTP request that will be used in order to communicate with the Server connected to Hyperledger Fabric Blockchain
 
-After retriving the photo taken during the printing process these will be uploaded in IPFS and their hashes will be sended to Hyperledger Server.
+After retriving the photos, taken during the printing process, these will be uploaded on IPFS and their hashes will be sended to Hyperledger Server.
 
 ```python
 import requests
