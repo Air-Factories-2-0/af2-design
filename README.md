@@ -215,7 +215,7 @@ In order to retrieve the information contained on the Hyperledger Blockchain, Et
 
 ##### 5.5 - Retrive validation result from Hyperledger
 
-For each printed piece, on the Hyperledger Blockchain there are the results of the print quality check carried out on each N layers, therefore a percentage of print quality is associated with each piece: if all the pieces have a value greater than 70/80% (TO BE DECIDED) then the order is considered completed successfully.
+For each printed piece, on the Hyperledger Blockchain there are the results of the print quality check carried out on each N layers, therefore a percentage of print quality is associated with each piece: if all the pieces have a value greater than 80% then the order is considered completed successfully.
 
 ##### 5.6 - Paying Maker
 
