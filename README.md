@@ -61,7 +61,7 @@ The structure of Air Factories 2.0 includes:
 
 ## [Front-End](https://github.com/Air-Factories-2-0/af2-frontend)
 
-It's a website made using React-Native Web; it can interact with the Ethereum SmartContract using the web3 libraries. 
+It's a website made using React; it can interact with the Ethereum SmartContract using the web3 libraries. 
 
 ## Distributed Back-End
 
