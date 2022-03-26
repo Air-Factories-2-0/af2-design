@@ -22,23 +22,19 @@ This section contains the description of the main functionalities of the Air Fac
 
 In order to register on Air Factories 2.0, the user simply have to visit the website and register himself into it; to do this, the user must use MetaMask and has to be connected with his Ethereum Account.
 
-[SCREENSHOT HOMEPAGE ESEMPIO COLLEGAMENTO CON METAMASK]()
 
 In the registration page, the user will specify the type of the account he would like to create between **Air Maker** and **Air Caller**; these data, together with the account address and other information, will be saved in the Blockchain.
 
-[SCREENSHOT REGISTRATION PAGE]()
 
 Every time the user starts a transaction that will write data in the Ethereum Blockchain, he must pay the GAS that is the execution cost in the network; in this case, for instance, the user will pay the registration in Air Factories 2.0 with Ethereum. 
 
 The user to login into the website just needs to go in the homepage while he is connected in MetaMask with the address he used for the registration. The system will automaticaly detect if the account address exists on the smart contract and will show him the main page. 
 
-[SCREENSHOT MAIN PAGE]()
 
 #### Printer On-boarding
 
 If the type of the account is **Air Maker** the use will be able to add new printers into the Air Factories 2.0 environment. 
 
-[SCREENSHOT ONBOARDING PAGE]()
 
 The user have to go into the specific page and inserts the information about his printer like: type, brand, available nozzles, available materials, food safety and so on.
 
@@ -255,3 +251,7 @@ def piecesDistribution(printers, npieces, maxPrintablePieces):
 ---
 
 ### Oracle
+
+Blockchain oracles are third-party services that provide information external to smart contracts. They act as bridges between blockchains and the outside world. Blockchains and smart contracts cannot access off-chain data. A Blockchain oracle is not the data source itself, but rather the level that requires, verifies, and authenticates external data sources to then transmit the information. To request data from the outside world, the smart contract must be called up and must be spent network resources. Some oracles have the ability to not only transmit information to smart contracts, but also to send it back to external sources.
+
+Software oracles interact with online information sources and transmit data to the Blockchain; this information can come from databases, servers, online websites - essentially, any data source on the Web. A centralized oracle is controlled by a single entity and is the sole provider of information for a smart contract. Using only one source of information can be risky - the effectiveness of the contract depends entirely on the entity controlling the oracle. The fundamental problem of centralized oracles is the existence of a single point of error, which makes contracts less resistant to vulnerabilities and attacks.
