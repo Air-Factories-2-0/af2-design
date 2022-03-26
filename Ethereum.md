@@ -247,6 +247,12 @@ def piecesDistribution(printers, npieces, maxPrintablePieces):
 ---
 
 ### Token
+In general, everything running on the Blockchain is paid for; in particular, there are tokens running on the Blockchain, which are currencies, and which are used to interact with the corresponding applications.
+In the Air Factories 2.0 project, a coin (represented by the ERC-20 token) was implemented, which was called the Air Factories Token (AFT), with which users can interact with the platform.
+Users pay to buy tokens, and thanks to these they can interact with the infrastructure: users who want to join the platform must buy a certain number of tokens and pay on-boarding for each printer they intend to connect.
+The Air Caller, when making an Air Call, must pay a certain number of AFT based on what it orders, and then those tokens are turned from the platform to the Air Makers who participated in the production.
+The Air Makers are paid considering the time spent, the electricity spent in the printing of the product, the material used and the wear of the printer.
+Even to submit a new product you have to pay, with a certain number of tokens, and then, the Air Makers who participate in the vote, and that will be valid that product, are paid in the form of those tokens.
 
 ---
 
